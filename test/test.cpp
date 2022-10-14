@@ -23,6 +23,7 @@ public:
 		Assert::AreEqual("100", to_hex(256).c_str());
 		Assert::AreEqual("FEED", to_hex(65261).c_str());
 	}
+	/*
 	TEST_METHOD(test_to_exp)
 	{
 		Assert::AreEqual("0.00e+00", to_exp(0).c_str());
@@ -94,7 +95,7 @@ public:
 			mult_table(100, ss);
 			Assert::AreEqual("", ss.str().c_str());
 		}
-	}
+	}*/
 };
 
 } // namespace

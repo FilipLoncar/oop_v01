@@ -6,4 +6,7 @@
 
 int main()
 {
+	int i;
+	std::cin >> i;
+	vsite::oop::v1::to_hex(i);
 }

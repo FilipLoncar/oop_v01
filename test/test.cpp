@@ -23,7 +23,7 @@ namespace all_tests
 			Assert::AreEqual("100", to_hex(256).c_str());
 			Assert::AreEqual("FEED", to_hex(65261).c_str());
 		}
-		
+
 		TEST_METHOD(test_to_exp)
 		{
 			Assert::AreEqual("0.00e+00", to_exp(0).c_str());
@@ -34,9 +34,9 @@ namespace all_tests
 			Assert::AreEqual("8.77e-02", to_exp(0.087654).c_str());
 			Assert::AreEqual("-5.56e+01", to_exp(-55.555).c_str());
 		}
-		
 
-		/*TEST_METHOD(test_multiplication_table)
+
+		TEST_METHOD(test_multiplication_table)
 		{
 			{
 				std::stringstream ss;
@@ -60,8 +60,8 @@ namespace all_tests
 					"4   4   8  12  16  20\n"
 					"5   5  10  15  20  25\n",
 					ss.str().c_str());
-			}*/
-			/*
+			}
+			
 			{
 				std::stringstream ss;
 				mult_table(20, ss);
@@ -88,8 +88,8 @@ namespace all_tests
 					"19  19  38  57  76  95 114 133 152 171 190 209 228 247 266 285 304 323 342 361 380\n"
 					"20  20  40  60  80 100 120 140 160 180 200 220 240 260 280 300 320 340 360 380 400\n",
 					ss.str().c_str());
-			}*/
-			/* {
+			}
+			 {
 				std::stringstream ss;
 				mult_table(21, ss);
 				Assert::AreEqual("", ss.str().c_str());
@@ -98,8 +98,10 @@ namespace all_tests
 				std::stringstream ss;
 				mult_table(100, ss);
 				Assert::AreEqual("", ss.str().c_str());
-			}*/
+			}
+		}
 	};
+
 
 
 } // namespace

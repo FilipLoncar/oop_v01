@@ -13,12 +13,9 @@ int main()
 	std::cin >> i;
 	std::cout << vsite::oop::v1::to_hex(i);
 
-	//vsite::oop::v1::to_exp(i);
 	std::cout << "\n";
 
 	std::stringstream ss;
 	vsite::oop::v1::mult_table(i,ss);
 	std::cout << ss.str();
-
-	//vsite::oop::v1::multi(i);
 }

@@ -102,6 +102,4 @@ namespace all_tests
 		}
 	};
 
-
-
 } // namespace

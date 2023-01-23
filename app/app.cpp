@@ -10,9 +10,7 @@ namespace vsite::oop::v1
 */
 
 	std::string to_hex(int i) {
-		std::string s = std::format("{:x}", i);
-		std::transform(s.begin(), s.end(), s.begin(), ::toupper);
-		return s;
+		return std::format("{:X}", i);
 	}
 
 	std::string to_exp(double e) {
@@ -20,27 +18,26 @@ namespace vsite::oop::v1
 	}
 
 	
-	void mult_table(int n, std::stringstream& ss) {
+	void mult_table(int n, std::ostream& os) {
 		if (n <= 0 || n > 20) {
-			ss << "";
-			exit;
+			os << "";
+
 		}
 		else {
-			ss << "0";
+			os << "0";
 			for (auto i = 1; i <= n; ++i) {
-				ss << std::format("{:4}", i);
+				os << std::format("{:4}", i);
 			}
-			ss << "\n";
+			os << "\n";
 
 			for (auto i = 1; i <= n; ++i) {
-				ss << i;
+				os << i;
 				for (auto j = 1; j <= n; ++j) {
-					ss << std::format("{:4}", i * j);
+					os << std::format("{:4}", i * j);
 				}
-				ss << "\n";
+				os << "\n";
 			}
 		}
 	}
 
 } // namespace
-

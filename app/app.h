@@ -11,6 +11,6 @@ namespace vsite::oop::v1
 
 	std::string to_exp(double e);
 
-	void mult_table(int n, std::stringstream& ss);
+	void mult_table(int n, std::ostream& os);
 
 }

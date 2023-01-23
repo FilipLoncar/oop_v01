@@ -15,7 +15,5 @@ int main()
 
 	std::cout << "\n";
 
-	std::stringstream ss;
-	vsite::oop::v1::mult_table(i,ss);
-	std::cout << ss.str();
+	vsite::oop::v1::mult_table(i,std::cout);
 }
